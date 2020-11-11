@@ -1,5 +1,6 @@
+// test
 for (let index = 0; index < 4; index++) {
-    // forward  
+    // forward
     servos.P1.run(50)
     servos.P2.run(50)
     basic.pause(1000)
@@ -7,7 +8,7 @@ for (let index = 0; index < 4; index++) {
     servos.P1.run(-50)
     servos.P2.run(50)
     basic.pause(1000)
-    // stop 
+    // stop
     servos.P1.run(0)
     servos.P2.run(0)
     basic.pause(1000)

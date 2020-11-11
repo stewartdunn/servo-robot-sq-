@@ -1,18 +1,13 @@
-basic.show_leds("""
-    # # # # #
-    # . . . #
-    # . . . #
-    # . . . #
-    # # # # #
-    """)
-servos.P1.stop()
-basic.pause(2000)
-
-def on_forever():
+for index in range(4):
+    # forward
     servos.P1.run(50)
-    basic.pause(2000)
-    servos.P1.run(-50)
-    basic.pause(2000)
-    servos.P1.set_stop_on_neutral(False)
+    servos.P2.run(50)
     basic.pause(1000)
-basic.forever(on_forever)
+    # turn
+    servos.P1.run(-50)
+    servos.P2.run(50)
+    basic.pause(1000)
+    # stop
+    servos.P1.run(0)
+    servos.P2.run(0)
+    basic.pause(1000)
