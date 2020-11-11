@@ -12,4 +12,6 @@ for (let index = 0; index < 4; index++) {
     servos.P1.run(0)
     servos.P2.run(0)
     basic.pause(1000)
+    // test add
+    basic.showNumber(0)
 }
