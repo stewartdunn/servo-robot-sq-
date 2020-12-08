@@ -1,10 +1,11 @@
 {
-    "name": "Servo Robot sq 2",
+    "name": "W-Servo Robot sq",
     "description": "",
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "servo": "*"
+        "servo": "*",
+        "microphone": "*"
     },
     "files": [
         "main.blocks",

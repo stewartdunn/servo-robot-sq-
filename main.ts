@@ -11,3 +11,5 @@ for (let index = 0; index < 4; index++) {
     // stop
     servos.P1.run(0)
 }
+// stop
+servos.P2.run(0)
